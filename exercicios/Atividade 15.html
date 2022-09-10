@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira o valor do carro a vista: <input id="input_valor">
+   <br>
+    Insira a taxa de Juros(ao.mes): <input id="input_juros">
+    <br>
+    Insira a quantidade de parcelas: <input id="input_parcela">
+
+<button onclick="calcular()">Calcular Preju</button>
+
+<div id="div_resultado"></div>
+
+</body>
+</html>
+
+
+<script>
+
+function calcular() {
+
+    var valor_a_vista = Number(input_valor.value);
+    var taxa_juros = Number(input_juros.value);
+    var parcela = Number(input_parcela.value);
+
+    var a1 = valor_a_vista/parcela;
+    var q = 1 + (taxa_juros/100);
+    // ou var q = 1 + (taxa_juros * 0.01)
+
+    var n = parcela;
+
+    var soma_termos = (a1 * ((q ** n )- 1)) / (q - 1);
+
+    var b = valor_a_vista * 0.8;
+
+    var c = soma_termos / valor_a_vista;
+
+    div_resultado.innerHTML = `  Seu carro vai sair por um total de R$${soma_termos}. 
+    Após 1 mês, ele já vai valer só R$${b}. Porque comprou financiado, 
+    vai pagar o correspondente a ${c} carros;`
+
+}
+
+</script>
+
+ 
+<!-- juros composto -->

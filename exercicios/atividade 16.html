@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16 Estudo</title>
+</head>
+<body>
+    <button onclick="oito_passagens()">08 passagens</button><br>
+    <button onclick="vinte_passagens()">20 passagens</button>
+    <button onclick="cinquenta_passagens()">50 passagens</button>
+
+    <div id="div_resultado"></div>
+
+</body>
+</html>
+
+<script>
+    function oito_passagens() {
+        var qtdPassagens = 8
+        var recarga = 32.45 // valor pago
+        var custoViagemComDesconto = 4.06
+        var valorTotalRecarga = 35.20 // valor sem desconto
+
+        // achando Y
+        var y = (1 - (recarga / valorTotalRecarga)) * 100
+
+        // achando Z
+        
+        var lucro = valorTotalRecarga - recarga
+        var z = lucro / 4.40 // quantas passagens consigo comprar com o lucro
+
+        div_resultado.innerHTML = `Ao comprar <b style="color: red">${qtdPassagens}</b> passagens, 
+        você pagou <b style="color: red">${y}%</b> a menos. É como se tivesse ganhado <b style="color: red">${z}</b> passagens de bônus `
+    }
+
+    function vinte_passagens() {
+        var qtdPassagens = 20
+        var recarga = 78.65 // valor pago
+        var custoViagemComDesconto = 3.93
+        var valorTotalRecarga = 88 // valor sem desconto
+
+        // achando Y
+        var y = (1 - (recarga / valorTotalRecarga)) * 100
+
+        // achando Z
+        var lucro = valorTotalRecarga - recarga
+        var z = lucro / 4.40 // quantas passagens consigo comprar com o lucro
+
+        div_resultado.innerHTML = `Ao comprar <b style="color: red">${qtdPassagens}</b> passagens, 
+        você pagou <b style="color: red">${y}%</b> a menos. É como se tivesse ganhado <b style="color: red">${z}</b> passagens de bônus `
+    }
+
+    function cinquenta_passagens() {
+        var qtdPassagens = 50
+        var recarga = 191.41 // valor pago
+        var custoViagemComDesconto = 3.83
+        var valorTotalRecarga = 220 // valor sem desconto
+
+        // achando Y
+        var y = (1 - (recarga / valorTotalRecarga)) * 100
+
+        // achando Z
+        
+        var lucro = valorTotalRecarga - recarga
+        var z = lucro / 4.40 // quantas passagens consigo comprar com o lucro
+
+        div_resultado.innerHTML = `Ao comprar <b style="color: red">${qtdPassagens}</b> passagens, você pagou <b style="color: red">${y.toFixed(2)}%</b> a menos. É como se tivesse ganhado <b style="color: red">${z.toFixed(2)}</b> passagens de bônus`
+    }
+</script>

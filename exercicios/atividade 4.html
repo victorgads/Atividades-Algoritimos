@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Insira um número <input id="input_numero">
+    <button onclick="calcular()">Calcular tabuada</button>
+<div id="div_tabuada"></div>
+
+</body>
+</html>
+
+
+<script>
+    function calcular(){
+        div_tabuada.innerHTML = ` 
+        ${input_numero.value} X 1 = ${input_numero.value * 1} <br>
+        ${input_numero.value} X 2 = ${input_numero.value * 2} <br>
+        ${input_numero.value} X 3 = ${input_numero.value * 3} <br>
+        ${input_numero.value} X 4 = ${input_numero.value * 4} <br>
+        ${input_numero.value} X 5 = ${input_numero.value * 5} <br>
+        ${input_numero.value} X 6 = ${input_numero.value * 6} <br>
+        ${input_numero.value} X 7 = ${input_numero.value * 7} <br>
+        ${input_numero.value} X 8 = ${input_numero.value * 8} <br>
+        ${input_numero.value} X 9 = ${input_numero.value * 9} <br>  
+        `
+    }
+</script>

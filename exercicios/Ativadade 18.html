@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Porções de pão francês:  <span id="pão">0</span> <br>
+    Porções de carne boniva:  <span id="carne">0</span> <br>
+    Porções de carne de soja:  <span id="soja">0</span> <br>
+    Porções de arroz com feijão: <span id="arroz">0</span> <br>
+
+    <b>Total de calorias: <span id="calorias">0</span> </b> <br>
+    
+    <button onclick="comer_pao()">Comer um pão francês</button> <br>
+    <button onclick="comer_carne()">Comer porção de carne</button> <br>
+    <button onclick="comer_soja()">Comer porção de soja</button> <br>
+    <button onclick="comer_arroz()">Comer porção de arroz com feijão</button> <br>
+    <button onclick="recomeçar()">Recomeçar</button>
+
+</body>
+</html>
+<script>
+    
+    var kcal =0;
+    var pao =0;
+    function comer_pao() {
+    pao = pao +1;
+    pão.innerHTML = ` ${pao}`
+
+    kcal = kcal +50;
+    calorias.innerHTML = `${kcal}`
+  
+    
+    }
+
+    var carninha =0;
+    function comer_carne() {
+    carninha = carninha +1;
+    carne.innerHTML = ` ${carninha}`
+
+    kcal = kcal +100;
+    calorias.innerHTML = `${kcal}`
+    
+    }
+
+    var sojinha =0;
+    function comer_soja() {
+    sojinha = sojinha +1;
+    soja.innerHTML = ` ${sojinha}`
+
+    kcal = kcal +30;
+    calorias.innerHTML = `${kcal}`
+    
+    }
+
+    var arrozinho =0;
+    function comer_arroz() {
+    arrozinho = arrozinho +1;
+    arroz.innerHTML = ` ${arrozinho}`
+    
+    kcal = kcal +120;
+    calorias.innerHTML = `${kcal}`
+    }
+
+    var zerar =0;
+    function recomeçar() {
+    zerar = 0;
+    pão.innerHTML = 0;
+    carne.innerHTML =0;
+    soja.innerHTML =0;
+    arroz.innerHTML =0;
+    calorias.innerHTML=0;
+
+    calorias.innerHTML = 0;
+
+    
+    }
+</script>

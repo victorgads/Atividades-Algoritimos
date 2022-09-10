@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    Insira o KI base <input id="input_ki"> <br> <br>
+    <b>Transformar em ...</b> <br> <br>
+<button onclick="ssj()">SSJ</button>
+<button onclick="ssj2()">SSJ2</button>
+<button onclick="ssj3()">SSJ3</button>
+
+<div id="calculoKI"></div>
+
+</body>
+</html>
+
+<script>
+    function ssj(){
+        calculoKI.innerHTML = `  Após se transformar em SSJ, 
+        o ki desse Sayajin passa a ser de ${Number(input_ki.value) * 50}
+        `
+    }
+
+    function ssj2(){
+        calculoKI.innerHTML = ` Após se transformar em SSJ2, 
+        o ki desse Sayajin passa a ser de ${Number(input_ki.value) * 100}
+        `
+    }
+
+    function ssj3(){
+        calculoKI.innerHTML = ` Após se transformar em SSJ3,
+        o ki desse Sayajin passa a ser de ${Number(input_ki.value) * 200}
+        
+        `
+    }
+
+
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+Primerio Número: <input id="input_numero1">
+Segundo Número: <input id="input_numero2">
+
+<button onclick="calcular()">Calcular</button>
+
+<div id="div_resultado"></div>
+
+</body>
+</html>
+
+<script>
+
+    function calcular(){
+
+        var calculo = (Number(input_numero1.value) ** Number(input_numero2.value));
+
+        div_resultado.innerHTML = ` ${Number(input_numero1.value)} elevado a ${Number(input_numero2.value)}
+         dá ${calculo}.
+        
+        `
+    }
+
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+Insira o número <input id="input_numero">
+<br>
+
+<button onclick="calcular()">Calcular com .math</button>
+
+<br>
+
+<button onclick="calcular2()">Calcular normal</button>
+
+<div id="div_resultado"></div>
+    
+</body>
+</html>
+
+<script>
+    function calcular(){ 
+        div_resultado.innerHTML = ` A raiz quadrada do número é: ${Math.sqrt(Number(input_numero.value))} <br>
+        e a raíz cúbica é de: ${Math.cbrt (Number(input_numero.value)).toFixed(2)} `
+      }
+
+      function calcular2(){
+        var raiz_cubica = (Number(input_numero.value) **(1/3));
+        var raiz_quadrada = (Number(input_numero.value) ** (1/2));
+
+        div_resultado.innerHTML = `A raiz cúbica do número é: ${raiz_cubica} <br>
+        e a raiz quadrada é:  ${raiz_quadrada}`
+
+      }
+
+
+</script>

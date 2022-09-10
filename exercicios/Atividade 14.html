@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Primeiro termo:
+    <input id="input_primeiro_termo"><br>
+    Razão: <input id="input_razao"><br>
+    Quantidade de termos:
+    <input id="input_qtd_termos"><br>
+
+    <button onclick="calcular_pg()">Calcular PG</button>
+    <div id="div_resultado"></div>
+  </body>
+</html>
+
+<script>
+  function calcular_pg() {
+    var primeiro_termo = Number(input_primeiro_termo.value);
+    var razao = Number(input_razao.value);
+    var qtd_termos = Number(input_qtd_termos.value);
+
+    var resultado_pg = primeiro_termo * (razao ** (qtd_termos - 1))
+
+    div_resultado.innerHTML = `O ${qtd_termos}º termo nessa PG será ${resultado_pg}`;
+  }
+</script>
