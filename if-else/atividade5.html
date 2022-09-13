@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+<br>
+<body style="background-color: rgb(162, 175, 175)">
+   <center> <h1 style="color: rgb(17, 0, 255)">Calcular frequência</h1></center>
+    
+    <br>
+   <center> frequência do aluno : <input id="frequenciAluno" type="text"></center><br>
+   <center> <button onclick="calcular()">Analisar frequência</button></center>
+    <br>
+   <center><div id="imagem"></div></center>
+</body>
+</html>
+<script>function calcular(){
+
+    var frequencia = Number(frequenciAluno.value);
+    
+    if(frequencia < 50){
+       imagem.innerHTML = `<img src="https://thumbs.dreamstime.com/b/turista-perdido-com-o-saco-que-guarda-o-mapa-57706478.jpg">`
+    }
+else {
+    imagem.innerHTML = `<img src="https://lh3.googleusercontent.com/ODN3jADsgNZcBS7QWNqnHCx5_k2oliG_dtpPdgGuAfiBeIcUC3Pas4TfTQQHnFjkLsKTrVBGsgHWciiY5ArQXDd2fsd948sCLIw9U0XBNchOglR4yyuftlNcsWHbi4lYO6IhV8yvQZLRCwlb08O2Cux8sgPau2qWXiW_e6A-1JQe9R1zqQH_HPLC8lz16u1Twckah0nyMWRP7qvDHfK33qyieuEd9I4B1hEr1WZIfNOizEEBJigPTeOGPsSfUnIvCmsoZId-R8BFk3bMeVc5DCy5d5OTJRyy_vE1Ph9W2bUrX_KRdmXBmP3eAgbN6545VQrm_HFxvhTLuR8JZG1iY-iZIZxS9hMbChLLAN3htdRTWDkChQB4a-YnCGkA1vlRvBra1OatG3ijOSqs7Z5lu_wTXTuLpyefIOmBUxoo74AXhXxgJohwFFD5H0r6YsJ6TDmTFGvmLk1R4GDLPLKMOpxASRcr50qXJxbesLyTcx3A8sIR4I15kYNpytgTGEre8X1rj26Ay3EdbHt_p2r9nspXJRZHO_hx1seBYR5NerNSsY_dhcjvuSRiyNXgsWAYsv9EjGaG67mX2an51pO17oNtbqGWhJ1aSV4g0VKHwPFgMqsZbuwBf17S3CUMzmwW0nggNsDKt3I5EaJySKFhCOy951H9Iy9w3yTaqW34fda62Y3DdlQkiQfCCYZsT0DmP2AVM22WDgvAUxQGROTVlw48Ld3hKCG8gy5PLjhcIcwTuBXFt96NizO2Pe5mVa4vzSJqZ2cQoJ78hxq1o0cLb_QJTRZ2KakACHy_Z_tNzjRWDgu-pONZ2zoi6xRq0WGfVkwR5LdCgQPsJhNjPQkPamczJsUz6Het9QsDkBWoRak=w592-h789-no?authuser=0">`
+}
+
+
+
+
+} 
+
+</script>

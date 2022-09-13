@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExÃ©rcicio 06</title>
+</head>
+<body>
+             <center><h1>Pedir pizza</h1></center>
+          <center>Valor da pizza:  <input type = "number" id = "valorinformado"></center><br>
+           <center>Amigos reunidos: <input type = "number" id = "qtdamigosreunidos"></center><br>
+           <center>valor por amigo: <input id="valorCota" type="number"></center><br>
+          <center><button onclick = "rolapizza()">Rola pizza ?</button></center>
+         <center><div id = "valorfinaldapizza"></div></center>
+</body>
+</html>
+<script>
+    function rolapizza() {
+        var valorpizza = Number(valorinformado.value);
+        var qtdamigos = Number(qtdamigosreunidos.value);
+        var valorcotinha = Number(valorCota.value);
+        var valorfdapizza = valorpizza / qtdamigos;
+
+
+        if (valorfdapizza <= valorcotinha){
+            valorfinaldapizza.innerHTML = `Uhu! Vamos pedir a pizza! Cada amigo 
+            vai pagar R$${valorfdapizza}`}
+        else {
+            valorfinaldapizza.innerHTML = `HUmm Lamento`
+
+        }
+                             }
+        
+            
+        
+        
+
+                        
+        </script>

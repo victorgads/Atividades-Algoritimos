@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <h1>Conta Poupança</h1>
+    </center>
+    <center>saldo da conta: <input id="input_saldoConta" type="number"></center> <br>
+    <center>valor a débitar: <input id="input_valorDebitar" type="number"></center><br><br>
+    <center><button onclick="analisar()">Analisar conta</button></center>
+   <center><div id="resultado"></div></center>
+
+</body>
+
+</html>
+<script>
+    function analisar() {
+
+        var saldoConta = Number(input_saldoConta.value);
+        var valorDebitar = Number(input_valorDebitar.value);
+                var valorDebitado = Number(saldoConta - valorDebitar);
+        if (valorDebitado < 0) {
+            resultado.innerHTML = `<b style= "color: red">o saldo atual da conta corrente é R$${valorDebitado.toFixed(2)}</b>`
+        }
+        else {
+            resultado.innerHTML = `<u style= "color: blue">o saldo atual da conta corrente é R$${valorDebitado.toFixed(2)}</u>`
+        }
+
+
+    }
+</script>

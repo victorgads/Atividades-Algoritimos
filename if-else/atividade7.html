@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    minutos do arroz no fogo: <input id="arroznoFogo" type="text"><br>
+    <button onclick="calcular()">Provar arroz</button>
+    <br> <br>
+    <div id="imagem"></div>
+
+</body>
+</html>
+<script> function calcular (){
+
+  var arroz = Number(arroznoFogo.value);
+  var arroznoPonto =  5 / arroz
+
+
+
+
+             if(arroz < 5){
+    imagem.innerHTML = `Arroz cru !
+                 <br><br>
+     <img src="https://t1.rg.ltmcdn.com/pt/posts/4/4/5/bolo_de_arroz_cru_com_iogurte_9544_paso_0_600.jpg">`
+}
+
+
+
+            if(arroz = 5){
+            imagem.innerHTML = `Parabéns! Arroz perfeito!
+                 <br><br>
+     <img src="https://cdn.panelinha.com.br/receita/1555945789657-Panelinha-29-01-2015-6528.jpg">`
+}
+
+
+            else 
+            {
+            imagem.innerHTML = `cozido demais !
+                 <br><br>
+     <img src="https://www.wikihow.com/images_en/thumb/a/aa/Fix-Soggy-Rice-Step-1-Version-2.jpg/550px-nowatermark-Fix-Soggy-Rice-Step-1-Version-2.jpg">`
+            }
+
+
+
+        }
+
+
+
+
+</script>

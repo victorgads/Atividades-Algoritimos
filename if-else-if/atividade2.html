@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <center><h1 style="color: red">Programa Que Exibe a Classe Social</h1></center>
+         <center><b>renda familiar mensal:</b> <input id="rendaFamilia" type="number"></center>
+         <br>
+         <center><button style="color: red" onclick="calcular()">Verificar situação</button></center>
+         <br>
+         <center><b><div style="color: rgb(231, 12, 78)" id="situacao"></div></b></center>
+    
+</body>
+</html>
+<script> 
+function calcular(){
+
+        var resultRenda = Number(rendaFamilia.value);
+       
+
+        if(resultRenda <= 250){
+
+                situacao.innerHTML = "Classe E"
+
+        }
+
+        else if(resultRenda <= 900){
+
+            situacao.innerHTML = "Classe D"
+        }
+
+        else if(resultRenda <= 2500){
+
+
+            situacao.innerHTML = "Classe C"
+
+        }
+
+
+        else if (resultRenda <= 9500){
+
+            situacao.innerHTML = "Classe B"
+        }
+
+
+        else {
+
+            situacao.innerHTML = "Classe A"
+        }
+
+
+        } 
+</script>

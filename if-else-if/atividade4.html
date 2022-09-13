@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="color: rgb(48, 48, 192)">
+    <center>
+        <h1>Jogadores</h1>
+    </center>
+    <center>Quantas Partidas o Atacante Jogou ? <input id="qtdPartidas" type="text"></center>
+    <br>
+    <center>Solicita Quantos Gols ele Marcou: <input id="qtdGol" type="text"></center>
+    <br>
+    <center><button style="color: red" onclick="calcular()">Estudar atacante</button></center>
+    <br>
+    <center><div id="imagem"></div></center>
+</body>
+</html>
+<script>function calcular(){
+
+
+    var media = Number(qtdGol.value) / Number(qtdPartidas.value)
+
+
+
+            if(media < 0.2){
+
+                imagem.innerHTML = `Melhor mudar de posição
+                 <br><br>
+     <img src="https://jpimg.com.br/uploads/2017/04/I_20080612_000329_4.jpg"> <br><br> Sua média de gols/partida é de ${media.toFixed(2)}`
+            
+            }
+            else if(media <= 0.6){
+
+                imagem.innerHTML = `Atacante mediano
+                 <br><br>
+     <img src="https://pbs.twimg.com/media/EcMQ6JcWAAA8GQz.jpg"> <br><br> Sua média de gols/partida é de ${media.toFixed(2)}`
+
+            }
+
+           else {
+
+                imagem.innerHTML = `Atacante de futuro
+                 <br><br>
+     <img src="https://s2.glbimg.com/1fonvchueGBlYKPtPVVil45UNhI=/0x0:3278x2186/924x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2019/02/03/img_3651.jpg"> <br><br> Sua média de gols/partida é de ${media.toFixed(2)}`
+
+
+            }
+}
+
+</script>

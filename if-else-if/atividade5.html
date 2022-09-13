@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+                 <center><h1>Para o ser humano, a temperatura é...</h1></center>
+
+                 <center>Informe Temperatura: <input id="tempInfo" type="number"></center>
+                    <br>
+                   <center><button onclick="calcular()">Calcular Temperatura</button></center>
+                    <br>
+                      <center><div id="resultado"></div></center>
+</body>
+</html>
+<script>
+    function calcular(){
+
+
+        var temp = Number(tempInfo.value)
+
+        if (temp < 14){
+
+            resultado.innerHTML = `Congelante`
+        }
+
+
+            else if (temp < 21){
+
+                resultado.innerHTML = `Com Frio`
+            }
+    
+            else if (temp < 24){
+
+                resultado.innerHTML = `Confortável`
+            }
+    
+            else if (temp < 31){
+
+                resultado.innerHTML = `Com Calor`
+
+            }
+    
+            else {
+                resultado.innerHTML = `Calor escaldante`
+            }   
+        }
+
+
+</script>

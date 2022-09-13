@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center><br>
+        <h1 style="color: rgb(228, 25, 69)">Medidor de Altura</h1>
+    </center>
+    <center> Altura : <input id="metro" type="number"></center><br>
+    <center><button style="color: red" onclick="calcular()">Quais esportes ?</button></center><br>
+    <center><div id="imagem"></div></center><br>
+
+
+</body>
+
+</html>
+<script>
+    function calcular(){
+
+            var altura = Number(metro.value);
+
+
+        if(altura <= 1.65){
+
+            imagem.innerHTML = "Você pode ser piloto de corrida !"}
+
+            else{
+
+                imagem.innerHTML =  "Você pode ser jogador de futebol"
+            }
+
+           if (altura >= 1.80){
+
+            imagem.innerHTML = "Você pode ser jogador de vôlei ou basquete"
+
+           }
+
+        }
+</script>

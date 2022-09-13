@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    idade: <input id="input_idade" type="number">
+    nome: <input id="input_nome" type="text">
+
+    <button onclick="calcularMedia()">Avaliar Aluno</button>
+    <div id="resultado"></div>
+</body>
+
+</html>
+<script>
+
+    function calcularMedia() {
+
+        var idade = Number(input_idade.value)
+        var idadeNecessaria = (idade / 18 * 100 )   
+        var nome = input_nome.value
+        if (idade >= 18) {
+
+             alert(`${nome} vamos tirar a CNH?`)
+        }
+        
+        else {
+                alert (`${nome} você possui ${idadeNecessaria.toFixed(2)}% da idade necessária para tirar a CNH, vá jogar Playstation!`)
+
+        }
+        }
+        
+</script>

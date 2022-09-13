@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+<br>
+<body style="background-color: rgb(162, 175, 175)">
+   <center> <h1 style="color: rgb(17, 0, 255)">Medidor de Temperatura</h1></center>
+    
+    <br>
+   <center> <p1>temperatura do ambiente :</p1> <input id="temperaturaAmbiente" type="text"></center><br>
+   <center> <button onclick="calcular()">Verificar clima</button></center>
+    <br>
+   <center><div id="imagem"></div></center>
+</body>
+</html>
+<script>function calcular(){
+
+    var clima = Number(temperaturaAmbiente.value);
+    
+    if(clima < 10){
+       imagem.innerHTML = `Apropriada p/ conservar alimento 
+                <br><br>
+       <img src="https://www.naiz.eus/media/asset_publics/resources/000/725/788/article_main_landscape/025_gastro.jpg">`
+    }
+else {
+    imagem.innerHTML = `Inapropriada p/ conservar alimento
+                 <br><br>
+     <img src="https://imgproxy.ojc.com.br/insecure/fit/800/800/ce/0/plain/https%3A%2F%2Fopopular.com.br%2Fpolopoly_fs%2F1.1626536.1538065150%21%2Fimage%2Fimage.jpg_gen%2Fderivatives%2Flandscape_800%2Fimage.jpg">`
+}
+
+
+
+
+} 
+
+</script>
