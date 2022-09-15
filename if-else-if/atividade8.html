@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <center><h1>Dieta</h1></center>
+            <br>
+
+            <center>quantos pães franceses você tem comido por dia ?  <input id="qtdPaes" type="number"></center>
+            <br> <br>
+            <center>quantos pacotes de bolacha tem comido por dia ?  <input id="qtdBolachas" type="number"> </center>
+            <br> <br>
+            <center>quantos copos de achocolatado tem tomado por dia ?  <input id="qtdAchocolatado" type="number"></center>
+            <br> <br>
+            <center><button onclick="calcular()">Verificar calorias</button></center>
+            <br><br>
+            <center><div id="resultado"></div></center>
+
+</body>
+</html>
+<script>
+
+    function calcular (){
+
+            var paoFrances = Number(qtdPaes.value); 
+            var bolachas = Number(qtdBolachas.value);
+            var achocolatado = Number(qtdAchocolatado.value);
+
+        var caloriaPao = paoFrances * 50;
+        var calaoriaBiscoito = bolachas * 80;
+        var caloriaChocolate = achocolatado * 70;
+
+        var total = (caloriaChocolate + calaoriaBiscoito + caloriaPao);
+
+        if (total < 200){
+
+            resultado.innerHTML = `Está perdendo peso`
+
+        }
+
+        else if (total < 400){
+
+            resultado.innerHTML = `Nem lá, nem cá. Vai manter a forma.`
+        }
+
+        else {
+
+            resultado.innerHTML = `Forte tendência á ganhar peso`
+
+
+        }
+
+
+    }
+</script>
