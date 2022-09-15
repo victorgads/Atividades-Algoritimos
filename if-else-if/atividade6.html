@@ -15,48 +15,50 @@
     <center>Informe Peso do Paciente: <input id="pesoPaciente" type="number"></center>
     <br>
     <br>
-   <center><button onclick="calcular()">Calcular Peso</button></center>
+    <center><button onclick="calcular()">Calcular Peso</button></center>
     <br>
-       <center><div id="resultado"></div></center>
+    <center>
+        <div id="resultado"></div>
+    </center>
 
 
 </body>
 
 </html>
 <script>
-function calcular (){
+    function calcular() {
 
-var peso = Number(pesoPaciente.value)
+        var peso = Number(pesoPaciente.value)
 
 
-        if (peso < 13.5){
+        if (peso < 13.5) {
 
             resultado.innerHTML = `Abaixo do peso`
-  
+
         }
 
-        
 
-         else if (peso < 21){
+
+        else if (peso < 21) {
 
 
             resultado.innerHTML = `Peso na média`
 
 
 
-            if ( peso == 18.3){
+            if (peso == 18.3) {
 
-                    resultado.innerHTML = `Peso perfeito`
+                resultado.innerHTML = `Peso perfeito`
 
-}
+            }
 
-         }
+        }
 
-         else {
+        else {
             resultado.innerHTML = `Acima do peso`
-         }
+        }
 
 
-}
+    }
 
 </script>
