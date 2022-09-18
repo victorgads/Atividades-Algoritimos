@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+
+        <h1>Contador de Cliques</h1>
+    <div id="Mensagem"> Você já clicou vezes</div>
+    <div id="divNumero">0</div>
+    <div id="resultado"></div>
+    <br> <br>
+    <button onclick= calcular()>Clique aqui</button>
+</center>
+</body>
+
+</html>
+<script>
+    var qtdCliques = 0;
+    function calcular() {
+
+        qtdCliques = qtdCliques + 1
+
+        divNumero.innerHTML = qtdCliques;
+
+
+        if (qtdCliques < 5) {
+
+            resultado.innerHTML = `Dedo fraquinho, hein 
+             <br>`;
+            
+            
+        }
+        else if (qtdCliques < 10 ){
+
+            resultado.innerHTML = `Na média - não me impressiona...
+            <br>`;
+
+        }
+
+        else if (qtdCliques < 15){
+
+            resultado.innerHTML = `Está treinando em casa !
+            <br>`;
+
+        }
+
+        else {
+
+            resultado.innerHTML = `Mestre dos cliques !!!`
+        }
+
+    }
+    
+    divMensagem.innerHTML = `qtdCliques`;
+
+
+
+</script>

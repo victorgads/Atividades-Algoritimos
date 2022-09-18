@@ -1,0 +1,238 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <center>
+    <button onclick="avaliar1()">Nota 1</button>
+    <button onclick="avaliar2()">Nota 2</button>
+    <button onclick="avaliar3()">Nota 3</button>
+    <button onclick="avaliar4()">Nota 4</button>
+    <button onclick="avaliar5()">Nota 5</button>
+    <br> <br>
+    <div id="resultado">sua avaliação:</div> 
+    <br> 
+    <div id="nota"></div>
+    <br> 
+    <div id="cliques"></div>
+    <br> <br>
+    <div id="imagem"></div>
+
+    </center>
+    
+</body>
+</html>
+<script>
+
+  var total = 0;
+  var qtdCliques = 0;
+    function avaliar1() {
+
+        total += 1
+        qtdCliques += 1 
+        var mediaCliques = total / qtdCliques;
+
+        nota.innerHTML = `${total}`;
+        cliques.innerHTML = ` Sua Média de Cliques é ${mediaCliques.toFixed(1)}` 
+
+        if (total < 2){
+
+imagem.innerHTML = `<img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/05/47720971_s.jpg"> `
+
+
+}
+        else if (total <= 3){
+
+         imagem.innerHTML = `<img src="https://www.bbc.com/staticarchive/8e72edc29d48ed3c7b75e97506ccc9768482923f.jpg"> `
+
+
+        }
+
+        else if (total <= 4.5){
+
+            imagem.innerHTML = `<img src="https://www.selecoes.com.br/wp-content/uploads/2019/05/iStock-969233490-760x450.jpg"> `
+
+        }
+
+
+        else { 
+
+            imagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeAGRffTAY67yFRuFtVSYNqcBVDrnt5YDPw&usqp=CAU"> `
+
+        }
+
+
+
+
+
+
+    }
+
+
+    function avaliar2() {
+
+        total += 2
+        qtdCliques += 1 
+        var mediaCliques = total / qtdCliques;
+
+        nota.innerHTML = `${total}`;
+        cliques.innerHTML = ` Sua Média de Cliques é ${mediaCliques.toFixed(1)}` 
+
+        
+        if (total < 2){
+
+imagem.innerHTML = `<img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/05/47720971_s.jpg"> `
+
+
+}
+        else if (total <= 3){
+
+         imagem.innerHTML = `<img src="https://www.bbc.com/staticarchive/8e72edc29d48ed3c7b75e97506ccc9768482923f.jpg"> `
+
+
+        }
+
+        else if (total <= 4.5){
+
+            imagem.innerHTML = `<img src="https://www.selecoes.com.br/wp-content/uploads/2019/05/iStock-969233490-760x450.jpg"> `
+
+        }
+
+
+        else { 
+
+            imagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeAGRffTAY67yFRuFtVSYNqcBVDrnt5YDPw&usqp=CAU"> `
+
+        }
+
+
+
+
+
+
+
+        
+    }
+
+
+function avaliar3() {
+
+    total += 3
+        qtdCliques += 1 
+        var mediaCliques = total / qtdCliques;
+
+        nota.innerHTML = `${total}`;
+        cliques.innerHTML = ` Sua Média de Cliques é ${mediaCliques.toFixed(1)}` 
+
+        
+        if (total < 2){
+
+imagem.innerHTML = `<img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/05/47720971_s.jpg"> `
+
+
+}
+        else if (total <= 3){
+
+         imagem.innerHTML = `<img src="https://www.bbc.com/staticarchive/8e72edc29d48ed3c7b75e97506ccc9768482923f.jpg"> `
+
+
+        }
+
+        else if (total <= 4.5){
+
+            imagem.innerHTML = `<img src="https://www.selecoes.com.br/wp-content/uploads/2019/05/iStock-969233490-760x450.jpg"> `
+
+        }
+
+
+        else { 
+
+            imagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeAGRffTAY67yFRuFtVSYNqcBVDrnt5YDPw&usqp=CAU"> `
+
+        }
+
+
+}
+
+function avaliar4() {
+
+    total += 4
+        qtdCliques += 1 
+        var mediaCliques = total / qtdCliques;
+        nota.innerHTML = `${total}`;
+        cliques.innerHTML = ` Sua Média de Cliques é ${mediaCliques.toFixed(1)}` 
+
+        
+        if (total < 2){
+
+imagem.innerHTML = `<img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/05/47720971_s.jpg"> `
+
+
+}
+        else if (total <= 3){
+
+         imagem.innerHTML = `<img src="https://www.bbc.com/staticarchive/8e72edc29d48ed3c7b75e97506ccc9768482923f.jpg"> `
+
+
+        }
+
+        else if (total <= 4.5){
+
+            imagem.innerHTML = `<img src="https://www.selecoes.com.br/wp-content/uploads/2019/05/iStock-969233490-760x450.jpg"> `
+
+        }
+
+
+        else { 
+
+            imagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeAGRffTAY67yFRuFtVSYNqcBVDrnt5YDPw&usqp=CAU"> `
+
+        }
+
+}
+
+
+
+function avaliar5() {
+
+    total += 5
+        qtdCliques += 1 
+        var mediaCliques = total / qtdCliques;
+
+        nota.innerHTML = `${total}`;
+        cliques.innerHTML = ` Sua Média de Cliques é ${mediaCliques.toFixed(1)}` 
+
+        
+        if (total < 2){
+
+imagem.innerHTML = `<img src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/05/47720971_s.jpg"> `
+
+
+}
+        else if (total <= 3){
+
+         imagem.innerHTML = `<img src="https://www.bbc.com/staticarchive/8e72edc29d48ed3c7b75e97506ccc9768482923f.jpg"> `
+
+
+        }
+
+        else if (total <= 4.5){
+
+            imagem.innerHTML = `<img src="https://www.selecoes.com.br/wp-content/uploads/2019/05/iStock-969233490-760x450.jpg"> `
+
+        }
+
+
+        else { 
+
+            imagem.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeAGRffTAY67yFRuFtVSYNqcBVDrnt5YDPw&usqp=CAU"> `
+
+        }
+}
+
+
+</script>
