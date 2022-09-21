@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <h1>Medidor Temperatura</h1>
+    Solicite a temperatura do ambiente: <input id="temperaturaAmbiente" type="number">
+    <br> <br>
+    <button onclick="medirtemp()">Medir conforto</button>
+
+
+   </center>
+</body>
+</html>
+<script>
+
+   function medirtemp(){
+
+        var temperatura = Number(temperaturaAmbiente.value)
+
+        if (temperatura <= 23 && temperatura >= 22){
+
+            alert(`Temperatura confortável`)
+        }
+
+        else  {
+
+            alert(`Temperatura não está confortável`)
+         
+   }
+
+   }
+</script>

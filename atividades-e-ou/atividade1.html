@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <center>
+    idade <input id="qtdIdade" type="numero">
+    <br> <br>
+    peso <input id="qtdPeso" type="number">
+    <br><br>
+    <button onclick="action()">Pode brincar?</button>
+    <br> <br>
+    <div id="resultado"></div>
+</center>
+</body>
+</html>
+<script>
+
+
+function action(){
+
+var peso = Number(qtdPeso.value)
+var idade = Number(qtdIdade.value)
+
+
+        if (idade > 15 && peso <= 100){
+
+            resultado.innerHTML = `Você poderá brincar`
+
+        }
+        else {
+
+            resultado.innerHTML = `Você não poderá brincar`
+
+
+        }
+
+}
+
+</script>
