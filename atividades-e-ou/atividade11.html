@@ -1,0 +1,66 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tv</title>
+</head>
+
+<body>
+    <br>
+    <h1>Modelos de Tv</h1>
+    marca da TV:<select id="modelos">
+        <option value="1">Samsung</option>
+        <option value="2">LG</option>
+        <option value="3">Mondial</option>
+        <option value="4">Britânia</option>
+    </select>
+    <br><br>
+    preço da TV: <input id="precoTv" type="number">
+    <br><br>
+    <button onclick="calcular()">Analisar compra</button>
+    <br><br>
+    <div id="resultado"></div>
+
+</body>
+
+</html>
+<script>
+
+    function calcular() {
+
+        var marca = Number(modelos.value);
+        var valorTv = Number(precoTv.value);
+
+        if (valorTv < 800 || valorTv > 2000) {
+
+            resultado.innerHTML = `TV fora da faixa de preço`
+
+        }
+           
+        
+        // ajuda mais fazer uma condição por vez nesse caso valorTV atribuido a marca
+          else if (valorTv >= 800 && valorTv <= 2000 && marca == 3 || marca == 4  ) { 
+            
+            resultado.innerHTML = `Na Faixa de preço, Porém Marca Não Confiável` }
+
+
+            else { 
+
+                resultado.innerHTML = ` Essa Tv Pode Entrar na Sua Lista`
+
+            }
+
+            if (valorTv <= 800){
+
+                resultado.innerHTML += ` Preço Baixo Demais `
+
+            } else if (valorTv > 2000)
+           
+           
+            {resultado.innerHTML +=  ` Preço Alto Demais `    }
+    }
+
+
+</script>

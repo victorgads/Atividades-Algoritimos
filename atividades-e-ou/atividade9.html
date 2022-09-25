@@ -1,0 +1,67 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Arroz</title>
+</head>
+
+<body>
+    <center>
+
+        <h1>Tipos de Arroz</h1>
+        <br>
+        Tipos de Arroz Utilizado: <select id="almoco">
+
+            <option value="1">arroz Branco</option>
+            <br>
+            <option value="2">Arroz integral</option>
+            <br>
+        </select>
+    <br><br>s
+        Tempo de Preparo (em minutos): <input id="tempoPreparo" type="number">
+        <br><br>
+        quantidade de sal usada (em Gramas): <input id="qtdSal" type="number">
+        <br><br>
+        <button onclick="calcular()">Avaliar arroz</button>
+
+        <div id="resultado"></div>
+
+
+    </center>
+</body>
+
+</html>
+<script>
+
+    function calcular() {
+
+        var arroz = Number(almoco.value);
+        var minutos = Number(tempoPreparo.value);
+        var sal = Number(qtdSal.value);
+
+        if ((arroz == 1 && minutos == 10 && sal <= 10) || (arroz == 2 && minutos == 20 && sal <= 15)) {
+
+            resultado.innerHTML = `Arroz Perfeito
+       <br><br> <img src="https://3.bp.blogspot.com/-EoDapwUDeHo/WfCH-zQFMSI/AAAAAAAABCE/PcXO-PbmAJk9TAPoCLowA82YPYBwgj7nQCLcBGAs/s1600/arroz-branco-soltinho-1016-1400x800.jpg" width ="300">`
+
+        }
+
+        else {
+
+            resultado.innerHTML = `Arroz Não Está Perfeito <br><br>
+        <img src = "https://t2.uc.ltmcdn.com/pt/posts/1/9/9/o_que_fazer_se_o_arroz_queimar_12991_600_square.jpg" width="300">`
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+</script>

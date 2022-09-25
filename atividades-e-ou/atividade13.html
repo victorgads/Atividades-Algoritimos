@@ -1,0 +1,123 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador De Pontos</title>
+</head>
+<body>
+    <center>
+         <h1>Contador De Pontos</h1>
+         <br><br>
+          Nota Da Avaliação: <input id="qtdNotas" type="number">
+          <br><br>
+          <button onclick="calcular()">Avaliar</button>
+          <br><br>
+          <div id="imagem"></div>
+             
+    </center>
+</body>
+</html>
+
+<script>
+
+function calcular(){
+
+var nota = Number(qtdNotas.value);
+
+
+if (nota < 0 || nota > 5 ){
+
+    alert('Nota Invalida, Por Favor, Insira Uma Nota Entre 0 e 5')
+}
+
+else if (nota < 0.5){
+
+
+    imagem.innerHTML = `<img src="./estrelas/nota0-5.jpg" width ="200px">`
+
+}
+
+else if (nota >= 0.5 && nota < 1){
+
+
+    imagem.innerHTML = `<img src="./estrelas/nota05-1.jpg" width ="200px">`
+}
+
+
+else if (nota >= 1 && nota < 1.5){
+
+    imagem.innerHTML = `<img src="./estrelas/nota1.jpg" width ="200px">`
+}
+
+
+else if (nota >= 1.5 && nota < 2){
+
+imagem.innerHTML = `<img src="./estrelas/nota1-5.jpg" width ="200px">`
+}
+
+else if (nota >= 2 && nota < 2.5){
+
+imagem.innerHTML = `<img src="./estrelas/nota2.jpg" width ="200px">`
+
+}
+
+else if (nota >= 2.5 && nota < 3){
+
+imagem.innerHTML = `<img src="./estrelas/nota2-5.jpg" width ="200px">`
+
+}
+
+else if (nota >= 3 && nota < 3.5){
+
+imagem.innerHTML = `<img src="./estrelas/nota3.jpg" width ="200px">`
+
+}
+
+else if (nota >= 3.5 && nota < 4){
+
+imagem.innerHTML = `<img src="./estrelas/nota3-5.jpg" width ="200px">`
+
+}
+else if (nota >= 4 && nota < 4.5){
+
+imagem.innerHTML = `<img src="./estrelas/nota4.jpg" width ="200px">`
+
+}
+
+else if (nota >= 4.5 && nota < 5){
+
+imagem.innerHTML = `<img src="./estrelas/nota4-5.jpg" width ="200px">`
+
+}
+else {
+
+imagem.innerHTML = `<img src="./estrelas/nota5.jpg" width ="200px">`
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+</script>

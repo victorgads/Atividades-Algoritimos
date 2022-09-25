@@ -1,0 +1,46 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa da Família</title>
+</head>
+<body>
+    <center>
+     <h1>Bolsa da Família</h1>
+    valor da renda individual : <input id="rendaIndividual" type="number">
+    <br> <br>
+    valor da renda familiar do usuário :  <input id="rendaFamilia" type="number">
+    <br> <br>
+<button onclick="calcular()">Terei o benefício ?</button>
+<br> <br>
+<div id="resultado"></div>
+
+</center>
+</body>
+</html>
+
+<script>
+
+    function calcular(){
+
+        var familia = Number(rendaIndividual.value);
+        var individual = Number(rendaFamilia.value);
+
+        if (individual < 2000 || familia  < 3000)
+
+        {
+            resultado.innerHTML = `Você terá direito ao auxílio`
+
+        }
+
+        else {
+
+            resultado.innerHTML = `Sem direito ao auxílio`
+
+        }
+
+    }
+
+
+</script>

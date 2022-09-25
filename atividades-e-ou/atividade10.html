@@ -1,0 +1,54 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medido Temperatura</title>
+</head>
+<body>
+    <center>
+        <h1>termometro</h1>
+    Temperatura: <input id="temp" type="number">
+    <br><br>
+    Umidade do ar: <input id="umid" type="number">
+    <br><br>
+    <button onclick="calcular()">Avaliar clima</button>
+    <br><br>
+    <div id="resultado"></div>
+    </center>
+
+
+</body>
+</html>
+<script>
+function calcular(){
+
+    var umidade = Number(umid.value);
+    var temperatura = Number(temp.value);
+
+    if (umidade < 0 || umidade > 100){
+
+        umid.value = null
+        temp.value = null
+
+        //   Método de zerar os valores ao ativar a fuction
+        //   umid.value = null
+        //   temp.value = null
+
+        alert(`Valor de umidade inválida`)
+        
+
+    }
+        // usar relação de grandeza 
+    else if (temperatura > 21 && temperatura <= 23 && umidade < 60)
+
+        resultado.innerHTML = `Clima agradável`
+
+    else {
+
+        resultado.innerHTML = `Clima desconfortável`
+    }
+
+}
+
+</script>

@@ -1,0 +1,53 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquinha</title>
+</head>
+
+<body>
+    <center>
+    <br>
+    <h1>Máquininha</h1>
+
+    Modo De Pagamento :
+
+    <select name="" id="modoPagamento">
+        <option value="CartaoDebito">Cartão de débito</option>
+        <option value="CartaoCredito">Cartão de crédito</option>
+        <option value="Boleto">Boleto</option>
+        <option value="money">Dinheiro</option>
+    </select>
+    <br> <br>
+
+    <br> <br>
+    <button onclick="calcular()">Analisar Compra</button>
+    <br> <br>
+    </center>
+</body>
+
+</html>
+<script>
+
+    function calcular() {
+
+        var dinheiro = modoPagamento.value
+       
+
+        if (dinheiro == 'money' || dinheiro == 'CartaoDebito') {
+
+            alert(`Você terá que pagar a vista`)
+        }
+
+        else {
+
+            alert(`Pagamento poderá ser parcelado`)
+
+        }
+
+    }
+
+
+</script>

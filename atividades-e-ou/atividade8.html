@@ -1,0 +1,53 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção De Empresas 2022</title>
+</head>
+
+<body>
+    <center>
+        <h1>Seleção De Empresas 2022</h1><br>
+
+        nome da empresa: <input id="nomeEmpresa" type="text">
+        <br><br>
+        valor da bolsa da empresa: <input id="valorBolsa" type="number">
+        <br> <br>
+        valor do VR da empresa: <input id="vrEmpresa" type="number"><br>
+        <br>
+        tempo de deslocamento da empresa para a SPTECH (em minutos): 
+        <br> <br>
+         <input id="tempoDeslocamento" type="number">
+        <br> <br>
+     <button onclick="calcular()">É preferida?</button>
+<br>
+        <div id="resultado"></div>
+    </center>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+
+        var nome = nomeEmpresa;
+        var salario = Number(valorBolsa.value);
+        var vr = Number(vrEmpresa.value);
+        var tempo = Number(tempoDeslocamento.value);
+
+        if (salario > 1800 || vr == 20 || tempo == 30) {
+
+
+            resultado.innerHTML = `A empresa ${nomeEmpresa.value} é uma de suas preferências.`
+        }
+
+        else {
+
+            resultado.innerHTML = `A empresa ${nomeEmpresa.value} está fora da sua lista.`
+        }
+    }
+
+
+</script>

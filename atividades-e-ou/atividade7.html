@@ -1,0 +1,44 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <center>
+    <h1>Contador de Clique cabalístico</h1>
+    <div id="Mensagem"> Você já clicou <span id="numero">0</span> vezes</div>
+   
+    <div id="resultado"></div>
+    <br> <br>
+    <button onclick= calcular()>Clique cabalístico</button>
+</center>
+    
+</body>
+</html>
+<script>
+    
+    
+    var total = 0;
+function calcular(){
+
+    total = total +1;
+   numero.innerHTML = total
+    
+
+   
+ 
+
+    if(total == 3 || total == 4 || total == 7 || total == 10)
+
+   {
+        alert(`Você clicou ${total} vezes e Juliana gosta desse número!`)
+
+   }
+
+
+
+}
+
+</script>

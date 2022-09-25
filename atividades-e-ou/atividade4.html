@@ -1,41 +1,72 @@
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Refeições</title>
 </head>
+
 <body>
     <center>
 
-       Oque Você Come No Café Da Manhã: <input id="refeicoes" type="number">
+        <h1>Refeições Diárias</h1>
 
-        <button class="carnes">
-            </button>
+        Oque Você Come No Café Da Manhã ?
 
-        <button class="carnes">
-        </button>
+        <select name="" id="cafeManha">
+            <option value="ovos">ovos</option>
+            <option value="leiteDeArroz">leiteDeArroz</option>
+            <option value="bacon">bacon</option>
+        </select>
+        <br> <br>
 
-        <button class="carnes">
-        </button>
+        Oque Você Comeu No Almoço ?
 
-        <button class="carnes">
-        </button>
+        <select name="" id="almoco">
+            <option value=" bife">bife</option>
+            <option value="hamburgerDeSoja">Hamburger Se Soja</option>
+            <option value="frangoGrelhado">Frango Grelhado</option>
+        </select>
 
-        <button class="carnes">
-        </button>
+        <br><br>
 
+        Oque Você Comeu Na Janta ?
 
-        <button class="carnes">
-        </button
+        <select name="" id="Janta">
+            <option value="PicanhaDeSoja">Picanha De Soja</option>
+            <option value="coracao">coração</option>
+            <option value="cupim">Cupim</option>
+        </select>
+        <br> <br>
 
-        button class="carnes">
-        </button>
-
-
-
-
-
+        <button onclick="calcular()">Eu sou Vegano ?</button>
+        <br> <br>
+        <div id="resultado"></div>
     </center>
 </body>
+
 </html>
+<script>
+
+    function calcular() {
+
+        var janta = Janta.value;
+        var cafe = cafeManha.value;
+        var almoço = almoco.value;
+
+        if (janta == 'PicanhaDeSoja', almoço == 'hamburgerDeSoja', cafe == 'leiteDeArroz' ){
+
+            resultado.innerHTML = `Sim, você é vegano !`
+        }
+    else {
+
+          resultado.innerHTML = `Não, você não é vegano.`
+
+}
+
+
+    }
+
+
+</script>
