@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MecPrograma</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <br>
+        Está chovendo ? <select id="perguntaChuva">
+            <option value="1">não</option>
+            <option value="2">sim</option>
+        </select>
+        <br><br>
+
+        Tenho dinheiro ? <select id="perguntaDinheiro">
+            <option value="1">sim</option>
+            <option value="2">não</option>
+        </select>
+        <br><br>
+
+        Tenho tempo ? <select id="perguntaTempo">
+            <option value="1">sim</option>
+            <option value="2">não</option>
+        </select>
+        <br><br>
+
+        Gosto de nuggets ? <select id="perguntaNuggets">
+            <option value="1">sim</option>
+            <option value="2">não</option>
+        </select><br><br>
+        <br><br>
+        <button onclick="calcular()">Resposta</button>
+        <br>
+        <div id="resultado"></div>
+</center>
+</body>
+</html>
+<script>
+function calcular(){
+
+   var chuva = Number(perguntaChuva.value);
+   var dinheiro = Number(perguntaDinheiro.value);
+   var tempo = Number(perguntaTempo);
+   var lanche = Number(perguntaNuggets);
+
+}
+
+</script>
