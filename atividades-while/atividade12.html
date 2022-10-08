@@ -1,0 +1,62 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativiade 13</title>
+</head>
+
+<body>
+   <center>
+        Tabuada : <select name="tabuada" id="idtabu">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <br><br>
+        ate quanto temos que ver ? <input id="limiteValor" type="number">
+        <br><br>
+        <button onclick="calcular()">Ver Tabuada</button>
+        <br><br>
+        <div id="resultado"></div>
+    </center>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        // pq o contador adicionar mais um ao que foi adicionado anteriormente 
+        var contador = 0
+        var numero = Number(idtabu.value);
+        var qtdlimite = Number(limiteValor.value);
+
+        while (contador < qtdlimite){
+
+            contador += 1;
+            var tabuada = numero * contador;
+            // UTILIZAR PARA SELECIONAR RESTOS E OBTER RESULTADOS IMPARES OU PARES
+            if (contador % 2){
+            //tag para colorir resultados inpares e pares 
+            resultado.innerHTML += `<span style="color:red;">${numero} x ${contador} = ${tabuada}</span>
+            <br>
+            `
+        }
+
+        else {
+            resultado.innerHTML += `<span style="color:blue;">${numero} x ${contador} = ${tabuada}</span>
+            <br>
+            `
+
+        }
+    }
+
+        
+    }
+
+</script>
