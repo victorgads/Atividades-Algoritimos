@@ -1,35 +1,42 @@
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 13</title>
 </head>
+
 <body>
     <center>
-
- de quantos em quantos dias você faz musculação :<input id="qtdNumero" type="number">
-<br>
-<button onclick="calcular()">Exibir rotina mensal</button>
-<div id="resultado"></div>
-<br><br>
+        de quantos em quantos dias você faz musculação :<input id="qtdNumero" type="number">
+        <br>
+        <button onclick="calcular()">Exibir rotina mensal</button>
+        <div id="resultado"></div>
+        <br><br>
     </center>
 </body>
+
 </html>
 <script>
-function calcular(){
+    function calcular() {
+        var contador = 2;
+        var treino = Number(qtdNumero.value);
+        var descanso = 1
+        resultado.innerHTML += `Dia 1 Musculação<br>`
+        while (contador <= 30) {
 
-    var contador = 0;
-    var treino = Number(qtdNumero);
-    var descanso = treino + 2; 
+            if (descanso == treino) {
+                resultado.innerHTML += `Dia ${contador} Musculação<br>
+                `
+                descanso = 0;
+            }
+            else {
 
-    while(contador <= 30){
-
-        if (treino )
+                resultado.innerHTML += `Dia ${contador} Comer, dormir etc<br>`
+            }
+            contador += 1;
+            descanso += 1;
+        }
     }
-
-
-
-}
-
 </script>

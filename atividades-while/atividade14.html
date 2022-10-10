@@ -1,0 +1,83 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+
+<body>
+    <center>
+        Quantos Anos Você Tem ? <input id="qtdIdade" type="text" onkeyup="contar()">
+        <br><br>
+        <div id="resultado"></div>
+    </center>
+</body>
+
+</html>
+<script>
+// ultilizar  (var contador) para contagem da função 
+    function contar() {
+        var numero = Number(qtdIdade.value);
+        var contador = 0
+        resultado.innerHTML = ``
+
+
+
+
+        while (contador < numero) {
+            contador += 1;
+          
+
+            if (contador <= 4) {
+             
+
+                resultado.innerHTML += `${contador} Primeira Infância<br>`
+             
+            }
+
+            else if (contador <= 6) {
+
+                resultado.innerHTML += `${contador} Pré-escolar<br>`
+
+            }
+
+            else if (contador <= 10) {
+
+                resultado.innerHTML += `${contador} Segunda-Infância<br>`
+
+
+            }
+
+            else if (contador <= 18) {
+
+                resultado.innerHTML += `${contador} Adolescência<br>`
+
+
+            }
+
+            else if (contador <= 50) {
+
+                resultado.innerHTML += `${contador} Adulto<br>`
+
+
+            }
+
+
+            else if (contador <= 100) {
+
+                resultado.innerHTML += `${contador} Melhor idade<br>`
+
+
+            }
+
+            else {
+
+                resultado.innerHTML += `${contador} Ancião<br>`
+            }
+        }
+
+    }
+
+</script>

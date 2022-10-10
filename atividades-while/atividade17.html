@@ -1,0 +1,41 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16</title>
+</head>
+
+<body>
+    quantas pessoas vão entrar no carro ? <input type="number" name="" id="qtdPessoas">
+    <br><br>
+    capacidade de passageiros : <input id="limitePassageiros" type="number">
+    <br>
+    <button onclick="calcular()">#Partiu Carona</button>
+    <br>
+    <div id="resultado"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        contador = 1;
+        var pessoa = Number(qtdPessoas.value);
+        var limite = Number(limitePassageiros.value)
+        while (contador <= pessoa) {
+            if (contador == 1) {
+
+                resultado.innerHTML += `Entrou o 1º passageiro (que é o(a) motorista)<br>`
+            }
+            else if (contador <= limite) {
+
+                resultado.innerHTML += `Entrou o ${contador}º passageiro <br>`
+            }
+            else {
+                resultado.innerHTML += ` o ${contador}º passageiro terá que esperar <br>`
+            }
+            contador += 1;
+        }
+    }
+</script>

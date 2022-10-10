@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+</head>
+
+<body>
+    <button onclick="calcular()">Curto 3 e 5</button>
+    <br>
+    <div id="resultado"></div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+
+        var contador = 0;
+
+        while (contador < 100) {
+            contador += 1;
+
+            if (contador % 3 == 0 && contador % 5 == 0) {
+                resultado.innerHTML += `É TRI!É PENTA !<br>`
+
+            } else if (contador % 3 == 0) {
+                resultado.innerHTML += `É TRI!<br>`
+
+            } else if (contador % 5 == 0) {
+                resultado.innerHTML += `É Penta!<br>`
+
+            } else {
+                resultado.innerHTML += `${contador}<br>`
+
+            }
+        }
+    }
+</script>

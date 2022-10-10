@@ -1,0 +1,42 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+</head>
+
+<body>
+    <center>
+        Solicite ao usuário a quantidade de elefantes : <input id="qtdElefantes" type="number">
+        <br>
+        <button onclick="calcular()">Atazanar a médium</button>
+        <br><br>
+        <div id="resultado"></div>
+
+    </center>
+</body>
+
+</html>
+<script>
+    // não atingi a resolução do problema infelizmente mas já vou anotar essa dúvida para próxima aula.
+    function calcular() {
+        var contador = 1;
+        var elefantes = Number(qtdElefantes.value);
+        var incomodam = ' incomodam, ';
+
+
+        resultado.innerHTML += `1 Elefante incomoda muita gente!<br>`
+
+        while (contador <= elefantes) {
+            contador += 1;
+            
+            if (contador <= elefantes) {
+                
+                resultado.innerHTML += `${contador} Elefantes ${incomodam} muito mais !<br>
+                `}
+            }
+            incomodam += incomodam;
+    }
+</script>

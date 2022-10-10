@@ -1,0 +1,71 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    quantos ônibus precisa pegar ? <input id="qtdOnibus" type="number">
+    <br>
+    quantos trens precisa pegar ? <input id="qtdTrem" type="number">
+    <br>
+    quantos metrôs precisa pegar ? <input id="qtdMetro" type="number">
+    <br>
+    <button onclick="calcular()">Partiu Trajeto</button>
+    <br>
+    <div id="resultado"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var contadorBusao = 1;
+        var contadorTrem = 1;
+        var contadorMetro = 1;
+        var onibus = Number(qtdOnibus.value);
+        var trem = Number(qtdTrem.value);
+        var metro = Number(qtdMetro.value);
+
+        while (contadorBusao <= onibus) {
+            resultado.innerHTML += `<span style="color:green;">Pegando o ${contadorBusao}º Busão<br></span>`
+            contadorBusao += 1;
+            while (contadorBusao <= 2) {
+                resultado.innerHTML += `<span style="color:green;">Pegando o ${contadorBusao}º Busão</span> (Começando a cansar)<br>`
+                contadorBusao += 1;
+            }
+            while (contadorBusao <= onibus) {
+                resultado.innerHTML += `<span style="color:green;">Pegando o ${contadorBusao}º Busão</span> (Já Cansado)<br>`
+                contadorBusao += 1;
+            }
+        }
+        while (contadorTrem <= trem) {
+            resultado.innerHTML += `<span style="color:red;">Pegando o ${contadorTrem}º Trem<br></span>`
+            contadorTrem += 1;
+            while (contadorTrem <= 2) {
+                resultado.innerHTML += `<span style="color:red;">Pegando o ${contadorTrem}º Trem</span> (Começando a cansar)<br>`
+                contadorTrem += 1;
+            }
+            while (contadorTrem <= trem) {
+                resultado.innerHTML += `<span style="color:red;">Pegando o ${contadorTrem}º Trem</span> (Já Cansado)<br>`
+                contadorTrem += 1;
+            }
+        }
+        while (contadorMetro <= metro) {
+            //estilizar contadores por div 
+            resultado.innerHTML += `<span style="color:blue;">Pegando o ${contadorMetro}º Metrô<br></span>`
+            contadorMetro += 1;
+            while (contadorMetro <= 2) {
+                resultado.innerHTML += `<span style="color:blue;">Pegando o ${contadorMetro}º Metrô</span> (Começando a cansar)<br>`
+                contadorMetro += 1;
+            }
+            while (contadorMetro <= metro) {
+                resultado.innerHTML += `<span style="color:blue;">Pegando o ${contadorMetro}º Metrô</span> (Já Cansado)<br>`
+                contadorMetro += 1;
+            }
+        }
+    }
+</script>

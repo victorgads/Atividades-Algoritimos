@@ -19,14 +19,18 @@
         var contador = 0;
         var voltas = qtdVoltas.value;
 
-        while (contador < voltas){
-
-        if (contador < voltas ){
-
-            resultado.innerHTML += `Carro Dando a ${contador}`
+        while (contador <= voltas){
             contador += 1;
+        if (contador <= voltas ){
+
+            resultado.innerHTML += ` Carro Dando a ${contador}<br>`
+            
+
 
         }
+
+        resultado.innerHTML += `Corrida Finalizada`
+           
     }
     }
 
